@@ -1,0 +1,51 @@
+{
+	"name": "ReactCodeSnippets",
+	"description": "Code snippets for Reactjs development in ES6 syntax",
+	"version": "1.2.1",
+	"displayName": "React code snippets",
+	"publisher": "hazer",
+	"icon": "images/react.png",
+	"galleryBanner": {
+		"theme": "light"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xabikos/vscode-react"
+	},
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "jsx",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "018725bd-f859-47c1-8058-4d7410cdd492",
+		"publisherId": "3893a1aa-0438-41dc-bd87-16b08a7de1bc",
+		"publisherDisplayName": "hazer"
+	}
+}

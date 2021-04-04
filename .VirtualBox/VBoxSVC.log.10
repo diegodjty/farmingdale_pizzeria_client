@@ -1,0 +1,89 @@
+00:00:00.000441 main     VirtualBox COM Server 6.1.6 r137129 win.amd64 (Apr  9 2020 19:01:29) release log
+00:00:00.000442 main     Log opened 2020-05-02T04:01:50.079465300Z
+00:00:00.000443 main     Build Type: release
+00:00:00.000447 main     OS Product: Windows 10
+00:00:00.000448 main     OS Release: 10.0.17763
+00:00:00.000448 main     OS Service Pack: 
+00:00:00.012459 main     DMI Product Name: Z390 UD
+00:00:00.020757 main     DMI Product Version: Default string
+00:00:00.020767 main     Firmware type: UEFI
+00:00:00.020995 main     Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.021009 main     Host RAM: 16316MB (15.9GB) total, 10539MB (10.2GB) available
+00:00:00.021012 main     Executable: E:\Program Files\Oracle\VirtualBox\VBoxSVC.exe
+00:00:00.021013 main     Process ID: 2240
+00:00:00.021013 main     Package type: WINDOWS_64BITS_GENERIC
+00:00:00.086097          VirtualBox: object creation starts
+00:00:00.086253          Home directory: 'C:\Users\Diego\.VirtualBox'
+00:00:00.086330          Installed Drivers:
+00:00:00.087941            C:\Windows\system32\DRIVERS\VBoxNetLwf.sys (Version: 6.1.6.37129)
+00:00:00.088509            C:\Windows\system32\DRIVERS\VBoxUSBMon.sys (Version: 6.1.6.37129)
+00:00:00.088851            C:\Windows\system32\DRIVERS\VBoxDrv.sys (Version: 6.1.6.37129)
+00:00:00.089881            C:\Windows\system32\DRIVERS\VBoxNetAdp6.sys (Version: 6.1.6.37129)
+00:00:00.093610          Loading settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:00.096050          usbLibGetDevices: Starting USB device enumeration
+00:00:00.133259          Getting USB descriptor (id 3) failed (dwErr=31) on hub USB#ROOT_HUB30#4&2720bdb3&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 12
+00:00:00.134829          usbLibGetDevices: Found 5 USB devices, 0 captured
+00:00:00.218964          HostDnsMonitor: initializing
+00:00:00.225573          HostDnsMonitor: updating information
+00:00:00.225595          HostDnsMonitor: old information
+00:00:00.225597            no server entries
+00:00:00.225598            no domain set
+00:00:00.225598            no search string entries
+00:00:00.225598          HostDnsMonitor: new information
+00:00:00.225599            server 1: 192.168.1.1
+00:00:00.225599            no domain set
+00:00:00.225600            no search string entries
+00:00:00.226929          VD: VDInit finished with VINF_SUCCESS
+00:00:00.261964          VirtualBox: object created
+00:00:00.650668          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={Could not find a registered machine named 'macOs 10.15 Catalina'}, preserve=false aResultDetail=0
+00:00:01.326708          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:01.332920          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:01:58.288382 createBase Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:01:58.342427          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:01:58.412336          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:01:58.425510          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:01:58.463618          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:01:58.466947          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:03:08.833986          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:03:08.847593          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:03:25.972986          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:03:26.015990          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:03:26.051887          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:05:02.958794 dns-monitor HostDnsMonitor: updating information
+00:05:02.958809 dns-monitor HostDnsMonitor: unchanged
+00:05:52.694988          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:06:20.960776          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:06:29.211315          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:06:35.728233          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:06:42.233337          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:06:48.775798          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:07:56.728044          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:07:59.966159          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:07:59.968662          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:07:59.970830          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:08:11.932325          Launched VM: 52626304 pid: 6112 (0x17e0) frontend: GUI/Qt name: Catalina
+00:08:15.905436          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:08:16.202351          ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:08:16.966779          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:08:17.499782          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:08:50.740084          Launched VM: 52758928 pid: 15420 (0x3c3c) frontend: GUI/Qt name: Catalina
+00:08:54.049579          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:08:54.262400          ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:08:54.762499          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:10:04.296884 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:10:04.335614 USBPROXY Getting USB descriptor (id 3) failed (dwErr=31) on hub USB#ROOT_HUB30#4&2720bdb3&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 12
+00:10:04.335857 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured
+00:11:09.917185          Launched VM: 52477488 pid: 9908 (0x26b4) frontend: GUI/Qt name: Catalina
+00:11:13.278608          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:11:13.487488          ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:11:14.054020          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:13:33.319388          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:14:37.728220          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:14:37.730610          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:14:45.724249          Launched VM: 52477728 pid: 4372 (0x1114) frontend: GUI/Qt name: Catalina
+00:14:48.998991          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
+00:14:49.205945          ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:14:49.747505          Saving settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:18:57.149394 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:18:57.185211 USBPROXY Getting USB descriptor (id 3) failed (dwErr=31) on hub USB#ROOT_HUB30#4&2720bdb3&0&0#{f18a0e88-c30c-11d0-8815-00a0c906bed8} port 12
+00:18:57.185394 USBPROXY usbLibGetDevices: Found 5 USB devices, 0 captured

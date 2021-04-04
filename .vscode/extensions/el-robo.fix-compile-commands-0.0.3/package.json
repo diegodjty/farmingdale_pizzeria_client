@@ -1,0 +1,58 @@
+{
+	"name": "fix-compile-commands",
+	"displayName": "Fix compile_commands.json",
+	"description": "Fixes specific issues with compile_commands.json when using the NMake Makefiles CMake generator.",
+	"version": "0.0.3",
+	"publisher": "el-robo",
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/el-robo/vscode-fix-compile-commands"
+	},
+	"engines": {
+		"vscode": "^1.23.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"cmake",
+		"tools",
+		"helper",
+		"build",
+		"c++"
+	],
+	"activationEvents": [
+		"workspaceContains:CMakeLists.txt",
+		"onCommand:cmake.configure",
+		"onCommand:cmake.fix_compile_commands"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "cmake.fix_compile_commands",
+				"title": "CMake: Fix compile_commands.json"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.0.43",
+		"eslint": "^4.11.0",
+		"file-uri-to-path": "^1.0.0",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6"
+	},
+	"dependencies": {
+		"file-uri-to-path": "^1.0.0"
+	},
+	"__metadata": {
+		"id": "088f3d9f-c5a2-4883-83d0-0aa3e6049f16",
+		"publisherId": "8a408bac-985f-46ba-a5bd-bbce82fc50fd",
+		"publisherDisplayName": "el-robo"
+	}
+}

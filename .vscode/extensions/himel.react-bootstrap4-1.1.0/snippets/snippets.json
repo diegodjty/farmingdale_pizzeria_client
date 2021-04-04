@@ -1,0 +1,866 @@
+{
+  "Lorem Text": {
+    "prefix": "rb4-lorem",
+    "body": [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+    ],
+    "description": "Lorem Text"
+  },
+  "Lorem Big Text": {
+    "prefix": "rb4-lorem-big",
+    "body": [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Lorem Ipsum has been the industry's standard dummy text ever since the",
+      "1500s, when an unknown printer took a galley of type and scrambled it to",
+      "make a type specimen book. It has survived not only five centuries, but",
+      "also the leap into electronic typesetting, remaining essentially",
+      "unchanged. It was popularised in the 1960s with the release of Letraset",
+      "sheets containing Lorem Ipsum passages, and more recently with desktop",
+      "publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    ],
+    "description": "Lorem Big Text"
+  },
+  "Alert Bootstrap 4": {
+    "prefix": "rb4-alert",
+    "body": [
+      "<div className=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
+      "  $2",
+      "</div>"
+    ],
+    "description": "Alert Bootstrap 4"
+  },
+  "Alert Dismissable Bootstrap 4 ": {
+    "prefix": "rb4-alert-dismiss",
+    "body": [
+      "<div className=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|} alert-dismissible fade show\" role=\"alert\">",
+      "   $2",
+      "  <button type=\"button\" className=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">",
+      "    <span aria-hidden=\"true\">×</span>",
+      "  </button>",
+      "</div>"
+    ],
+    "description": "Alert Dismissable Bootstrap 4 "
+  },
+  "Alert Big Message Bootstrap 4": {
+    "prefix": "rb4-alert-msg",
+    "body": [
+      "<div className=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
+      "  <h4 className=\"alert-heading\">${2:Well done!}</h4>",
+      "  <p>${3:Aww yeah, you successfully read this important alert message.} </p>",
+      "  <hr />",
+      "  <p className=\"mb-0\">",
+      "    ${4:Whenever you need to, be sure to use margin utilities to keep things nice and tidy.}",
+      "  </p>",
+      "</div>",
+      ""
+    ],
+    "description": "Alert Big Message Bootstrap 4"
+  },
+  "Badge Bootstrap 4": {
+    "prefix": "rb4-badge",
+    "body": [
+      "<span className=\"badge badge-${1|primary,secondary,success,danger,warning,info,light,dark|}\">$2</span>"
+    ],
+    "description": "Badge Bootstrap 4"
+  },
+  "Badge Pill Bootstrap 4": {
+    "prefix": "rb4-badge-pill",
+    "body": [
+      "<span className=\"badge badge-pill badge-${1|primary,secondary,success,danger,warning,info,light,dark|}\">$2</span>"
+    ],
+    "description": "Badge Pill Bootstrap 4"
+  },
+  "Breadcrumb Bootstrap 4": {
+    "prefix": "rb4-breadcrumb",
+    "body": [
+      "<nav aria-label=\"breadcrumb\">",
+      "  <ol className=\"breadcrumb\">",
+      "    <li className=\"breadcrumb-item\">$1</li>",
+      "  </ol>",
+      "</nav>",
+      ""
+    ],
+    "description": "Breadcrumb Bootstrap 4"
+  },
+  "Button Bootstrap 4": {
+    "prefix": "rb4-btn",
+    "body": [
+      "<button className=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|}\" type=\"${2|button,submit|}\">${3:Button}</button>"
+    ],
+    "description": "Button Bootstrap 4"
+  },
+  "Button Outline Bootstrap 4": {
+    "prefix": "rb4-btn-outline",
+    "body": [
+      "<button className=\"btn btn-outline-${1|primary,secondary,success,danger,warning,info,light,dark|}\" type=\"${2|button,submit|}\">${3:Button}</button>"
+    ],
+    "description": "Button Outline Bootstrap 4"
+  },
+  "Button Group Bootstrap 4": {
+    "prefix": "rb4-btn-group",
+    "body": [
+      "<div className=\"btn-group\" role=\"group\" aria-label=\"${1:Basic example}\">",
+      "  $2",
+      "</div>"
+    ],
+    "description": "Button Group Bootstrap 4"
+  },
+  "Button group vertical Bootstrap 4": {
+    "prefix": "rb4-btn-group-vertical",
+    "body": ["<div className=\"btn-group-vertical\">", "  $1", "</div>"],
+    "description": "Button group vertical Bootstrap 4"
+  },
+  "Button Toolbar Bootstrap 4": {
+    "prefix": "rb4-btn-toolbar",
+    "body": [
+      "<div className=\"btn-toolbar\" role=\"toolbar\" aria-label=\"${1:Toolbar with button groups}\">",
+      "  <div className=\"btn-group mr-2\" role=\"group\" aria-label=\"${2:First group}\">",
+      "    $3",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Button Toolbar Bootstrap 4"
+  },
+  "Card Bootstrap 4": {
+    "prefix": "rb4-card",
+    "body": [
+      "<div className=\"card\" style={{width: '18rem'}}>",
+      "  <div className=\"card-body\">",
+      "    <h5 className=\"card-title\">${1:Card title}</h5>",
+      "    <h6 className=\"card-subtitle mb-2 text-muted\">${2:Card subtitle}</h6>",
+      "    <p className=\"card-text\">",
+      "      ${3:Content}",
+      "    </p>",
+      "    <${4|a,Link|} ${5|href,to|}=\"/#\" className=\"card-link\">${6:Card link}</ ${4|a,Link|}>",
+      "  </div>",
+      "</div>",
+      ""
+    ],
+    "description": "Card Bootstrap 4"
+  },
+  "Card Image Bootstrap 4": {
+    "prefix": "rb4-card-img",
+    "body": [
+      "<div className=\"card\" style={{width: '18rem'}}>",
+      "  <img className=\"card-img-top\" src=\"${1:https://}\" alt=\"${2:profile}\" />",
+      "  <div className=\"card-body\">",
+      "    <h5 className=\"card-title\">${3:Card title}</h5>",
+      "    <p className=\"card-text\">${4:Some quick example text}</p>",
+      "  </div>",
+      "</div>",
+      ""
+    ],
+    "description": "Card Image Bootstrap 4"
+  },
+  "Card Header Bootstrap 4": {
+    "prefix": "rb4-card-header",
+    "body": [
+      "<div className=\"card\">",
+      "  <div className=\"card-header\">",
+      "    ${1:Quote}",
+      "  </div>",
+      "  <div className=\"card-body\">",
+      "    <blockquote className=\"blockquote mb-0\">",
+      "       $2",
+      "",
+      "      <footer className=\"blockquote-footer\">",
+      "        $3",
+      "",
+      "      </footer>",
+      "    </blockquote>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Card Header Bootstrap 4"
+  },
+  "Card Colored Bootstrap 4": {
+    "prefix": "rb4-card-colored",
+    "body": [
+      "<div className=\"card text-white bg-${1|primary,secondary,success,danger,warning,info,light,dark|} mb-3\" style={{maxWidth: '18rem'}}>",
+      "  <div className=\"card-header\">${2:Header}</div>",
+      "  <div className=\"card-body\">",
+      "     $3",
+      "",
+      "  </div>",
+      "</div>",
+      ""
+    ],
+    "description": "Card Colored Bootstrap 4"
+  },
+  "Card border Bootstrap 4": {
+    "prefix": "rb4-card-border",
+    "body": [
+      "<div className=\"card border-${1|primary,secondary,success,danger,warning,info,light,dark|} mb-3\" style={{maxWidth: '18rem'}}>",
+      "  <div className=\"card-header\">${2:Header}</div>",
+      "  <div className=\"card-body text-$1\">",
+      "   $3",
+      "",
+      "  </div>",
+      "</div>",
+      ""
+    ],
+    "description": "Card border Bootstrap 4"
+  },
+  "Card simple Bootstrap 4": {
+    "prefix": "rb4-card-simple",
+    "body": [
+      "<div className=\"card p-3\">",
+      "  <blockquote className=\"blockquote mb-0 card-body\">",
+      "    $1",
+      "  </blockquote>",
+      "</div>",
+      ""
+    ],
+    "description": "Card simple Bootstrap 4"
+  },
+  "collapse-accordion Bootstrap 4": {
+    "prefix": "rb4-collapse-accordion",
+    "body": [
+      "<div id=\"${1:accordianId}\" role=\"tablist\" aria-multiselectable=\"true\">",
+      "  <div className=\"card\">",
+      "    <div className=\"card-header\" role=\"tab\" id=\"${3:section1HeaderId}\">",
+      "      <h5 className=\"mb-0\">",
+      "        <a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${5:section1ContentId}\" aria-expanded=\"true\" aria-controls=\"${5:section1ContentId}\">",
+      "          ${2:Section 1}",
+      "        </a>",
+      "      </h5>",
+      "    </div>",
+      "    <div id=\"${5:section1ContentId}\" className=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${3:section1HeaderId}\">",
+      "      <div className=\"card-body\">",
+      "        ${4:Section 1 content}",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "  <div className=\"card\">",
+      "    <div className=\"card-header\" role=\"tab\" id=\"${7:section2HeaderId}\">",
+      "      <h5 className=\"mb-0\">",
+      "        <a data-toggle=\"collapse\" data-parent=\"#${1:accordianId}\" href=\"#${9:section2ContentId}\" aria-expanded=\"true\" aria-controls=\"${9:section2ContentId}\">",
+      "          ${6:Section 2}",
+      "        </a>",
+      "      </h5>",
+      "    </div>",
+      "    <div id=\"${9:section2ContentId}\" className=\"collapse in\" role=\"tabpanel\" aria-labelledby=\"${7:section2HeaderId}\">",
+      "      <div className=\"card-body\">",
+      "        ${8:Section 2 content}",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>",
+      ""
+    ],
+    "description": "collapse-accordion Bootstrap 4"
+  },
+  "Registration Form Bootstrap 4": {
+    "prefix": "rb4-form-register",
+    "body": [
+      "<div className=\"col-md-${1|6,4,12,10,3,5|} m-auto\">",
+      "  <form>",
+      "    <div className=\"form-group\">",
+      "      <label htmlFor=\"email\">Email address</label>",
+      "      <input type=\"email\" name=\"email\" className=\"form-control\" id=\"email\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\" />",
+      "      <small id=\"emailHelp\" className=\"form-text text-muted\">",
+      "        We'll never share your email with anyone else.",
+      "      </small>",
+      "    </div>",
+      "    <div className=\"form-group\">",
+      "      <label htmlFor=\"password\">Password</label>",
+      "      <input type=\"password\" name=\"password\" className=\"form-control\" id=\"password\" placeholder=\"Password\" />",
+      "    </div>",
+      "    <div className=\"form-group\">",
+      "      <label htmlFor=\"confirmpassword\">Password</label>",
+      "      <input type=\"password\" name=\"password2\" className=\"form-control\" id=\"confirmpassword\" placeholder=\"Password Again\" />",
+      "    </div>",
+      "    <div className=\"form-check\">",
+      "      <input type=\"checkbox\" name=\"checkbox\" className=\"form-check-input\" id=\"remember\" />",
+      "      <label className=\"form-check-label\" htmlFor=\"remember\">",
+      "        I accept terms and conditions",
+      "      </label>",
+      "    </div>",
+      "    <button type=\"submit\" className=\"btn btn-primary float-right\">",
+      "      Register",
+      "    </button>",
+      "  </form>",
+      "</div>"
+    ],
+    "description": "Registration Form Bootstrap 4"
+  },
+  "Login Form Bootstrap 4": {
+    "prefix": "rb4-form-login",
+    "body": [
+      "<div className=\"col-md-${1|6,4,12,10,3,5|} m-auto\">",
+      "  <form>",
+      "    <div className=\"form-group\">",
+      "      <label htmlFor=\"email\">Email address</label>",
+      "      <input type=\"email\" name=\"email\" className=\"form-control\" id=\"email\" aria-describedby=\"emailHelp\" placeholder=\"Enter email\" />",
+      "      <small id=\"emailHelp\" className=\"form-text text-muted\">",
+      "        Email that you have used while registration.",
+      "      </small>",
+      "    </div>",
+      "    <div className=\"form-group\">",
+      "      <label htmlFor=\"password\">Password</label>",
+      "      <input type=\"password\" name=\"password\" className=\"form-control\" id=\"password\" placeholder=\"Password\" />",
+      "    </div>",
+      "    <div className=\"form-check\">",
+      "      <input type=\"checkbox\" name=\"checkbox\" className=\"form-check-input\" id=\"remember\" />",
+      "      <label className=\"form-check-label\" htmlFor=\"remember\">",
+      "        Remember me",
+      "      </label>",
+      "    </div>",
+      "    <button type=\"submit\" className=\"btn btn-primary float-right\">",
+      "      Login",
+      "    </button>",
+      "  </form>",
+      "</div>"
+    ],
+    "description": "Login Form Bootstrap 4"
+  },
+  "Form group Bootstrap 4": {
+    "prefix": "rb4-form-group",
+    "body": [
+      "<form>",
+      "  <div className=\"form-group\">",
+      "    <label htmlFor=\"${1:formGroupExampleInput}\">${2:Example label}</label>",
+      "    <input type=\"text\" className=\"form-control\" id=\"${1:formGroupExampleInput}\" placeholder=\"${2:Example label}\" />",
+      "  </div>",
+      "  <div className=\"form-group\">",
+      "    <label htmlFor=\"${3:formGroupExampleInput2}\">${4:Another label}</label>",
+      "    <input type=\"text\" className=\"form-control\" id=\"${3:formGroupExampleInput2}\" placeholder=\"${4:Another label}\" />",
+      "  </div>",
+      "</form>",
+      ""
+    ],
+    "description": "Form group Bootstrap 4"
+  },
+  "Form inline Bootstrap 4": {
+    "prefix": "rb4-form-inline",
+    "body": [
+      "<form className=\"form-inline\">",
+      "  <label className=\"sr-only\" htmlFor=\"inlineFormInputName2\">Name</label>",
+      "  <input type=\"text\" className=\"form-control mb-2 mr-sm-2\" id=\"inlineFormInputName2\" placeholder=\"Jane Doe\" />",
+      "  <label className=\"sr-only\" htmlFor=\"inlineFormInputGroupUsername2\">Username</label>",
+      "  <div className=\"input-group mb-2 mr-sm-2\">",
+      "    <div className=\"input-group-prepend\">",
+      "      <div className=\"input-group-text\">@</div>",
+      "    </div>",
+      "    <input type=\"text\" className=\"form-control\" id=\"inlineFormInputGroupUsername2\" placeholder=\"Username\" />",
+      "  </div>",
+      "  <div className=\"form-check mb-2 mr-sm-2\">",
+      "    <input className=\"form-check-input\" type=\"checkbox\" id=\"inlineFormCheck\" />",
+      "    <label className=\"form-check-label\" htmlFor=\"inlineFormCheck\">",
+      "      Remember me",
+      "    </label>",
+      "  </div>",
+      "  <button type=\"submit\" className=\"btn btn-primary mb-2\">Submit</button>",
+      "</form>",
+      ""
+    ],
+    "description": "Form inline Bootstrap 4"
+  },
+  "Select Bootstrap 4": {
+    "prefix": "rb4-select",
+    "body": [
+      "<select className=\"custom-select my-1 mr-sm-2\">",
+      "  <option selected>Choose...</option>",
+      "  <option value={1}>One</option>",
+      "  <option value={2}>Two</option>",
+      "  <option value={3}>Three</option>",
+      "</select>"
+    ],
+    "description": "select Bootstrap 4"
+  },
+  "Input Bootstrap 4": {
+    "prefix": "rb4-input",
+    "body": [
+      "<input type=\"text\" className=\"form-control mb-2 mr-sm-2\" placeholder=\"${1:Jane Doe}\" />"
+    ],
+    "description": "Input Bootstrap 4"
+  },
+  "Input Iconed Bootstrap 4": {
+    "prefix": "rb4-input-icon",
+    "body": [
+      "<div className=\"input-group mb-2 mr-sm-2\">",
+      "  <div className=\"input-group-prepend\">",
+      "    <div className=\"input-group-text\">@</div>",
+      "  </div>",
+      "  <input type=\"text\" className=\"form-control\" placeholder=\"Username\" />",
+      "</div>",
+      ""
+    ],
+    "description": "Input Iconed Bootstrap 4"
+  },
+  "Textarea Bootstrap 4": {
+    "prefix": "rb4-textarea",
+    "body": [
+      "<textarea className=\"form-control\" rows={3} defaultValue={\"\"} >"
+    ],
+    "description": "Textarea Bootstrap 4"
+  },
+  "Checkbox Bootstrap 4": {
+    "prefix": "rb4-checkbox",
+    "body": ["<input type=\"checkbox\" className=\"form-check-input\" />"],
+    "description": "Checkbox Bootstrap 4"
+  },
+  "File Upload Bootstrap 4": {
+    "prefix": "rb4-file",
+    "body": [
+      "<div className=\"custom-file\">",
+      "  <input type=\"file\" className=\"custom-file-input\" id=\"fileupload\" />",
+      "  <label className=\"custom-file-label\" htmlFor=\"fileupload\">Choose file</label>",
+      "</div>",
+      ""
+    ],
+    "description": "File Upload Bootstrap 4"
+  },
+  "List Group Bootstrap 4": {
+    "prefix": "rb4-list-group",
+    "body": [
+      "<ul className=\"list-group\">",
+      "  <li className=\"list-group-item\">First</li>",
+      "  <li className=\"list-group-item\">Second</li>",
+      "  <li className=\"list-group-item\">Third</li>",
+      "  <li className=\"list-group-item\">Fourh</li>",
+      "  <li className=\"list-group-item\">Fifth</li>",
+      "</ul>",
+      ""
+    ],
+    "description": "List Group Bootstrap 4"
+  },
+  "List Group Buttons Bootstrap 4": {
+    "prefix": "rb4-list-group-buttons",
+    "body": [
+      "<div className=\"list-group\">",
+      "  <button type=\"button\" className=\"list-group-item list-group-item-action active\">",
+      "    I am active",
+      "  </button>",
+      "  <button type=\"button\" className=\"list-group-item list-group-item-action\">First</button>",
+      "  <button type=\"button\" className=\"list-group-item list-group-item-action\">Second</button>",
+      "  <button type=\"button\" className=\"list-group-item list-group-item-action\">Third</button>",
+      "</div>"
+    ],
+    "description": "List Group Buttons Bootstrap 4"
+  },
+  "Modal Bootstrap 4": {
+    "prefix": "rb4-modal",
+    "body": [
+      "<div className=\"modal fade\" id=\"${1:exampleModal}\" tabIndex={-1} role=\"dialog\" aria-labelledby=\"${2:exampleModalLabel}\" aria-hidden=\"true\">",
+      "    <div className=\"modal-dialog\" role=\"document\">",
+      "      <div className=\"modal-content\">",
+      "        <div className=\"modal-header\">",
+      "          <h5 className=\"modal-title\" id=\"${2:exampleModalLabel}\">Modal title</h5>",
+      "          <button type=\"button\" className=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+      "            <span aria-hidden=\"true\">×</span>",
+      "          </button>",
+      "        </div>",
+      "        <div className=\"modal-body\">",
+      "          $3",
+      "",
+      "        </div>",
+      "        <div className=\"modal-footer\">",
+      "          <button type=\"button\" className=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>",
+      "          <button type=\"button\" className=\"btn btn-primary\">Save changes</button>",
+      "        </div>",
+      "      </div>",
+      "    </div>",
+      "  </div>"
+    ],
+    "description": "Modal Bootstrap 4"
+  },
+  "Modal Button Bootstrap 4": {
+    "prefix": "rb4-modal-button",
+    "body": [
+      "  <button type=\"button\" className=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#${1:exampleModal}\">",
+      "       ${2: Launch modal}",
+      "  </button>"
+    ],
+    "description": "Modal Button Bootstrap 4"
+  },
+  "Modal scrolling Button Bootstrap 4": {
+    "prefix": "rb4-modal-scrolling",
+    "body": [
+      "<div className=\"modal fade\" id=\"${1:exampleModalLong}\" tabIndex={-1} role=\"dialog\" aria-labelledby=\"${2:exampleModalLongTitle}\" aria-hidden=\"true\">",
+      "  <div className=\"modal-dialog\" role=\"document\">",
+      "    <div className=\"modal-content\">",
+      "      <div className=\"modal-header\">",
+      "        <h5 className=\"modal-title\" id=\"${2:exampleModalLongTitle}\">$3</h5>",
+      "        <button type=\"button\" className=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+      "          <span aria-hidden=\"true\">×</span>",
+      "        </button>",
+      "      </div>",
+      "      <div className=\"modal-body\">",
+      "        $4",
+      "",
+      "      </div>",
+      "      <div className=\"modal-footer\">",
+      "        <button type=\"button\" className=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>",
+      "        <button type=\"button\" className=\"btn btn-primary\">Save changes</button>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>",
+      ""
+    ],
+    "description": "Modal scrolling Button Bootstrap 4"
+  },
+  "Modal centered Button Bootstrap 4": {
+    "prefix": "rb4-modal-centered",
+    "body": [
+      "<div className=\"modal fade\" id=\"${1:exampleModalCenter}\" tabIndex={-1} role=\"dialog\" aria-labelledby=\"${2:exampleModalCenterTitle}\" aria-hidden=\"true\">",
+      "  <div className=\"modal-dialog modal-dialog-centered\" role=\"document\">",
+      "    <div className=\"modal-content\">",
+      "      <div className=\"modal-header\">",
+      "        <h5 className=\"modal-title\" id=\"${3:exampleModalLongTitle}\"> $4 </h5>",
+      "        <button type=\"button\" className=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+      "          <span aria-hidden=\"true\">×</span>",
+      "        </button>",
+      "      </div>",
+      "      <div className=\"modal-body\">",
+      "        $5",
+      "        ",
+      "      </div>",
+      "      <div className=\"modal-footer\">",
+      "        <button type=\"button\" className=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button>",
+      "        <button type=\"button\" className=\"btn btn-primary\">Save changes</button>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Modal centered Button Bootstrap 4"
+  },
+  "Navbar Bootstrap 4": {
+    "prefix": "rb4-navbar",
+    "body": [
+      "<nav className=\"navbar navbar-expand-lg navbar-light bg-light\">",
+      "  <NavLink className=\"navbar-brand\" to=\"/#\">",
+      "    Navbar",
+      "  </NavLink>",
+      "  <button className=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+      "    <span className=\"navbar-toggler-icon\" />",
+      "        </button>",
+      "        <div className=\"collapse navbar-collapse\" id=\"navbarText\">",
+      "          <ul className=\"navbar-nav mr-auto\">",
+      "            <li className=\"nav-item\">",
+      "              <NavLink className=\"nav-link\" to=\"/#\">",
+      "                Home",
+      "              </NavLink>",
+      "            </li>",
+      "            <li className=\"nav-item\">",
+      "              <NavLink className=\"nav-link\" to=\"/#\">",
+      "                Features",
+      "              </NavLink>",
+      "            </li>",
+      "            <li className=\"nav-item\">",
+      "              <NavLink className=\"nav-link\" to=\"/#\">",
+      "                Pricing",
+      "              </NavLink>",
+      "            </li>",
+      "          </ul>",
+      "          <NavLink className=\"btn btn-outline-info my-2 my-sm-0\" to=\"/login\">",
+      "            Login",
+      "          </NavLink>",
+      "          <NavLink",
+      "            className=\"btn btn-outline-info my-2 my-sm-0 ml-3\"",
+      "            to=\"/register\"",
+      "          >",
+      "            Register",
+      "          </NavLink>",
+      "        </div>",
+      "      </nav>"
+    ],
+    "description": "Navbar Bootstrap 4"
+  },
+  "pagination Bootstrap 4": {
+    "prefix": "rb4-pagination",
+    "body": [
+      "<nav aria-label=\"Page navigation example\">",
+      "  <ul className=\"pagination justify-content-center\">",
+      "    <li className=\"page-item disabled\">",
+      "      <NavLink className=\"page-link\" to=\"/#\" tabIndex={-1}>Previous</NavLink>",
+      "    </li>",
+      "    <li className=\"page-item\"><NavLink className=\"page-link\" to=\"/#\">1</NavLink></li>",
+      "    <li className=\"page-item\"><NavLink className=\"page-link\" to=\"/#\">2</NavLink></li>",
+      "    <li className=\"page-item\"><NavLink className=\"page-link\" to=\"/#\">3</NavLink></li>",
+      "    <li className=\"page-item\">",
+      "      <NavLink className=\"page-link\" to=\"/#\">Next</NavLink>",
+      "    </li>",
+      "  </ul>",
+      "</nav>",
+      ""
+    ],
+    "description": "pagination Bootstrap 4"
+  },
+  "progressbar Bootstrap 4": {
+    "prefix": "rb4-progressbar",
+    "body": [
+      "<div className=\"progress\">",
+      "  <div className=\"progress-bar\" role=\"progressbar\" style={{width: '${1:25}%'}} aria-valuenow={${1:25}} aria-valuemin={0} aria-valuemax={100}>${1:25}%</div>",
+      "</div>",
+      ""
+    ],
+    "description": "progressbar Bootstrap 4"
+  },
+  "Table Bootstrap 4": {
+    "prefix": "rb4-table",
+    "body": [
+      "<div className=\"table-responsive\">",
+      "<table className=\"table\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th scope=\"col\">#</th>",
+      "      <th scope=\"col\">First</th>",
+      "      <th scope=\"col\">Last</th>",
+      "      <th scope=\"col\">Handle</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <th scope=\"row\">1</th>",
+      "      <td>Mark</td>",
+      "      <td>Otto</td>",
+      "      <td>@mdo</td>",
+      "    </tr>",
+      "    <tr>",
+      "      <th scope=\"row\">2</th>",
+      "      <td>Jacob</td>",
+      "      <td>Thornton</td>",
+      "      <td>@fat</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+      "</div>",
+      ""
+    ],
+    "description": "Table Bootstrap 4"
+  },
+  "Dark Table Bootstrap 4": {
+    "prefix": "rb4-table-dark",
+    "body": [
+      "<div className=\"table-responsive\">",
+      "<table className=\"table table-dark\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th scope=\"col\">#</th>",
+      "      <th scope=\"col\">First</th>",
+      "      <th scope=\"col\">Last</th>",
+      "      <th scope=\"col\">Handle</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <th scope=\"row\">1</th>",
+      "      <td>Mark</td>",
+      "      <td>Otto</td>",
+      "      <td>@mdo</td>",
+      "    </tr>",
+      "    <tr>",
+      "      <th scope=\"row\">2</th>",
+      "      <td>Jacob</td>",
+      "      <td>Thornton</td>",
+      "      <td>@fat</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+      "</div>",
+      ""
+    ],
+    "description": "Dark Table Bootstrap 4"
+  },
+  "Table Head Style Colored Bootstrap 4": {
+    "prefix": "rb4-table-head",
+    "body": [
+      "<div className=\"table-responsive\">",
+      "<table className=\"table\">",
+      "  <thead className=\"thead-light\">",
+      "    <tr>",
+      "      <th scope=\"col\">#</th>",
+      "      <th scope=\"col\">First</th>",
+      "      <th scope=\"col\">Last</th>",
+      "      <th scope=\"col\">Handle</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <th scope=\"row\">1</th>",
+      "      <td>Mark</td>",
+      "      <td>Otto</td>",
+      "      <td>@mdo</td>",
+      "    </tr>",
+      "    <tr>",
+      "      <th scope=\"row\">2</th>",
+      "      <td>Jacob</td>",
+      "      <td>Thornton</td>",
+      "      <td>@fat</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+      "</div>",
+      ""
+    ],
+    "description": "Table Head Style Colored Bootstrap 4"
+  },
+  "Table Striped Bootstrap 4": {
+    "prefix": "rb4-table-striped",
+    "body": [
+      "<div className=\"table-responsive\">",
+      "<table className=\"table table-striped\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th scope=\"col\">#</th>",
+      "      <th scope=\"col\">First</th>",
+      "      <th scope=\"col\">Last</th>",
+      "      <th scope=\"col\">Handle</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <th scope=\"row\">1</th>",
+      "      <td>Mark</td>",
+      "      <td>Otto</td>",
+      "      <td>@mdo</td>",
+      "    </tr>",
+      "    <tr>",
+      "      <th scope=\"row\">2</th>",
+      "      <td>Jacob</td>",
+      "      <td>Thornton</td>",
+      "      <td>@fat</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+      "</div>",
+      ""
+    ],
+    "description": "Table Striped Bootstrap 4"
+  },
+  "Table Bordered Bootstrap 4": {
+    "prefix": "rb4-table-bordered",
+    "body": [
+      "<div className=\"table-responsive\">",
+      "<table className=\"table table-bordered\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th scope=\"col\">#</th>",
+      "      <th scope=\"col\">First</th>",
+      "      <th scope=\"col\">Last</th>",
+      "      <th scope=\"col\">Handle</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <th scope=\"row\">1</th>",
+      "      <td>Mark</td>",
+      "      <td>Otto</td>",
+      "      <td>@mdo</td>",
+      "    </tr>",
+      "    <tr>",
+      "      <th scope=\"row\">2</th>",
+      "      <td>Jacob</td>",
+      "      <td>Thornton</td>",
+      "      <td>@fat</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+      "</div>",
+      ""
+    ],
+    "description": "Table Bordered Bootstrap 4"
+  },
+  "Table Hover Bootstrap 4": {
+    "prefix": "rb4-table-hover",
+    "body": [
+      "<div className=\"table-responsive\">",
+      "<table className=\"table table-hover\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th scope=\"col\">#</th>",
+      "      <th scope=\"col\">First</th>",
+      "      <th scope=\"col\">Last</th>",
+      "      <th scope=\"col\">Handle</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <th scope=\"row\">1</th>",
+      "      <td>Mark</td>",
+      "      <td>Otto</td>",
+      "      <td>@mdo</td>",
+      "    </tr>",
+      "    <tr>",
+      "      <th scope=\"row\">2</th>",
+      "      <td>Jacob</td>",
+      "      <td>Thornton</td>",
+      "      <td>@fat</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+      "</div>",
+      ""
+    ],
+    "description": "Table Hover Bootstrap 4"
+  },
+  "Table Small Hover Bootstrap 4": {
+    "prefix": "rb4-table-small-hover",
+    "body": [
+      "<div className=\"table-responsive\">",
+      "<table className=\"table table-sm table-hover\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th scope=\"col\">#</th>",
+      "      <th scope=\"col\">First</th>",
+      "      <th scope=\"col\">Last</th>",
+      "      <th scope=\"col\">Handle</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <th scope=\"row\">1</th>",
+      "      <td>Mark</td>",
+      "      <td>Otto</td>",
+      "      <td>@mdo</td>",
+      "    </tr>",
+      "    <tr>",
+      "      <th scope=\"row\">2</th>",
+      "      <td>Jacob</td>",
+      "      <td>Thornton</td>",
+      "      <td>@fat</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+      "</div>",
+      ""
+    ],
+    "description": "Table Small Hover Bootstrap 4"
+  },
+  "Table Small Striped Bootstrap 4": {
+    "prefix": "rb4-table-small-striped",
+    "body": [
+      "<div className=\"table-responsive\">",
+      "<table className=\"table table-sm table-striped\">",
+      "  <thead>",
+      "    <tr>",
+      "      <th scope=\"col\">#</th>",
+      "      <th scope=\"col\">First</th>",
+      "      <th scope=\"col\">Last</th>",
+      "      <th scope=\"col\">Handle</th>",
+      "    </tr>",
+      "  </thead>",
+      "  <tbody>",
+      "    <tr>",
+      "      <th scope=\"row\">1</th>",
+      "      <td>Mark</td>",
+      "      <td>Otto</td>",
+      "      <td>@mdo</td>",
+      "    </tr>",
+      "    <tr>",
+      "      <th scope=\"row\">2</th>",
+      "      <td>Jacob</td>",
+      "      <td>Thornton</td>",
+      "      <td>@fat</td>",
+      "    </tr>",
+      "  </tbody>",
+      "</table>",
+      "</div>",
+      ""
+    ],
+    "description": "Table Small Striped Bootstrap 4"
+  }
+}

@@ -1,0 +1,34 @@
+00:00:01.081457 VirtualBox GUI VM Selector Window 6.1.16 r140961 win.amd64 (Oct 16 2020 16:33:17) release log
+00:00:01.081459 Log opened 2020-11-18T21:01:52.660447800Z
+00:00:01.081459 Build Type: release
+00:00:01.081462 OS Product: Windows 10
+00:00:01.081462 OS Release: 10.0.18363
+00:00:01.081463 OS Service Pack: 
+00:00:01.101764 DMI Product Name: Z390 UD
+00:00:01.104883 DMI Product Version: Default string
+00:00:01.104892 Firmware type: UEFI
+00:00:01.105135 Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:01.105152 Host RAM: 16316MB (15.9GB) total, 9971MB (9.7GB) available
+00:00:01.105155 Executable: E:\Program Files\Oracle\VirtualBox\VirtualBox.exe
+00:00:01.105155 Process ID: 5900
+00:00:01.105156 Package type: WINDOWS_64BITS_GENERIC
+00:00:01.105262 Qt version: 5.6.2
+00:00:01.120480 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.579918 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:01.607753 refreshCertificates/#3: Found 1/109 SSL certs we/you trust (previously 1/91).
+00:04:30.330495 GUI: UIMediumEnumerator: Medium with key={{5079b8f5-5296-4d0c-b157-38f6a7f78c37}} created
+00:04:30.469934 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:07:21.545425 GUI: UIMediumEnumerator: Medium with key={{4e16de89-f7a3-4ba4-82b4-3d8f70bfcb9d}} created
+00:07:21.569933 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:07:41.904823 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:07:41.909719 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:08:03.925615 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:24:58.246918 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:31:37.230744 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:31:37.232912 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:31:37.394862 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:32:51.955321 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:32:52.064660 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:34:12.567168 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:34:13.921748 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:38:43.293918 GUI: UICommon::sltHandleCommitDataRequest: Emergency shutdown initiated

@@ -1,0 +1,39 @@
+{
+	"name": "bootstrap-all-version-snippet-extension",
+	"displayName": "Bootstrap All Version Snippet Extension",
+	"description": "Get Snippets for Bootstrap 1 to 4",
+	"version": "1.0.2",
+	"engines": {
+		"vscode": "^1.49.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dylxntn/bsallvsnippets"
+	},
+	"publisher": "DylxnTN",
+	"categories": [
+		"Snippets"
+	],
+	"icon": "bsallsnippets/icon.png",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "e9804d22-1e26-4f55-99be-d5b258e41f20",
+		"publisherId": "fc72ba72-17d2-45a5-9c69-0489f3d2f489",
+		"publisherDisplayName": "DylxnTN"
+	}
+}

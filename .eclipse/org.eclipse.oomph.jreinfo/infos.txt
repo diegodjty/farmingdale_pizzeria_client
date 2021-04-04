@@ -1,0 +1,2 @@
+C:\Program Files\Java\jdk-13.0.2;13;0;2;64;true;1583025397355
+C:\Program Files (x86)\Java\jre1.8.0_221;1;8;0;32;false;1567737653738

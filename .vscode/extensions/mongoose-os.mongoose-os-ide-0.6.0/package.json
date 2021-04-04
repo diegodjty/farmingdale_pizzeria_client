@@ -1,0 +1,130 @@
+{
+	"name": "mongoose-os-ide",
+	"displayName": "Mongoose OS IDE",
+	"description": "Development environment for Mongoose OS",
+	"version": "0.6.0",
+	"homepage": "https://mongoose-os.com",
+	"publisher": "mongoose-os",
+	"repository": "https://github.com/cesanta/mongoose-os-ide",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"icon": "resources/logo.png",
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Mongoose OS IDE configuration",
+			"properties": {
+				"mos.port": {
+					"type": "string",
+					"default": "",
+					"description": "--port value"
+				},
+				"mos.flags": {
+					"type": "string",
+					"default": "",
+					"description": "Extra mos command line flags to pass"
+				},
+				"mos.board": {
+					"type": "string",
+					"default": "",
+					"description": "Selected board"
+				}
+			}
+		},
+		"views": {
+			"explorer": [
+				{
+					"id": "mos",
+					"name": "Mongoose OS"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "mos.setPort",
+				"title": "MGOS: Set port"
+			},
+			{
+				"command": "mos.setBoard",
+				"title": "MGOS: Set board"
+			},
+			{
+				"command": "mos.openFile",
+				"title": "MGOS: Open device file"
+			},
+			{
+				"command": "mos.rebootDevice",
+				"title": "MGOS: Reboot device"
+			},
+			{
+				"command": "mos.openConfig",
+				"title": "MGOS: Open device config"
+			},
+			{
+				"command": "mos.runCommand",
+				"title": "MGOS: Run mos command"
+			},
+			{
+				"command": "mos.buildLocally",
+				"title": "MGOS: Build locally"
+			},
+			{
+				"command": "mos.build",
+				"title": "MGOS: Run mos build"
+			},
+			{
+				"command": "mos.flash",
+				"title": "MGOS: Flash build"
+			},
+			{
+				"command": "mos.console",
+				"title": "MGOS: Run mos console"
+			},
+			{
+				"command": "mos.sysInfo",
+				"title": "MGOS: Get device info"
+			},
+			{
+				"command": "mos.rpcList",
+				"title": "MGOS: List all RPCs"
+			},
+			{
+				"command": "mos.showPanel",
+				"title": "MGOS: Show output panel"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "mos.setPort",
+				"key": "Ctrl+p"
+			},
+			{
+				"command": "mos.rebootDevice",
+				"key": "Ctrl+u"
+			},
+			{
+				"command": "mos.refreshDeviceFiles",
+				"key": "Ctrl+l"
+			},
+			{
+				"command": "mos.openConfig",
+				"key": "Ctrl+,"
+			},
+			{
+				"command": "mos.runCommand",
+				"key": "Ctrl+."
+			}
+		]
+	},
+	"dependencies": {},
+	"__metadata": {
+		"id": "684f3dc9-94a1-46ab-8426-5a1c23f2d2b4",
+		"publisherId": "073e1b15-5ae5-47e8-91fb-71f784504a49",
+		"publisherDisplayName": "Mongoose OS"
+	}
+}

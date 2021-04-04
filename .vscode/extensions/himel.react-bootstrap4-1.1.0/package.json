@@ -1,0 +1,51 @@
+{
+	"name": "react-bootstrap4",
+	"displayName": "React Bootstrap 4 Snippets",
+	"description": "Bootstrap 4 Snippets for ReactJS",
+	"icon": "icon.png",
+	"version": "1.1.0",
+	"publisher": "Himel",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"keywords": [
+		"snippets",
+		"typescript",
+		"bootstrap",
+		"react",
+		"javascriptreact",
+		"javascript"
+	],
+	"categories": [
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Swe-HimelRana/React-Bootstrap-4.git"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "5aa20bf4-16a6-46b8-8fa6-0c47f7ca8f03",
+		"publisherId": "9ed975d3-b80e-4948-a8c5-40a1b3d12b7f",
+		"publisherDisplayName": "Himel"
+	}
+}

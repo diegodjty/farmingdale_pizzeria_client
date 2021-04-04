@@ -1,0 +1,38 @@
+Robo 3T 1.4 now with MongoDB 4.2 support
+<br/>
+<style type="text/css"> a { display: block; color: #47b648; } .text-primary { font-size: 18px; color: #47b648; } p { font-size: 14px; } .button { font-size: 16px; font-weight: bold; } </style><a class="button" href="https://robomongo.org/download?inappupdate">Download the new version here</a><h2 style="margin-top:16px;">Find these new features and other fixes and improvements in the latest Robo 3T release:</h2><p>    - MongoDB 4.2 support</p><p>    - mongo shell upgrade from 4.0 to 4.2</p><p>    - Ability to manually specify visible databases</p><a class="button" href="https://blog.robomongo.org/robo-3t-1-4/?inappupdate">View the full blog post</a><br/><br /><h2>Robo 3T feeling a bit underpowered? Level up to Studio 3T</h2>
+
+<p>
+    - Double-click to edit documents (instead of right-clicking every time)
+</p>
+<p>
+    - Auto-complete collection names, field names & more in the shell
+</p>
+<p>
+    - Import and export in CSV, JSON, SQL and BSON/mongodump
+</p>
+<p>
+    - Build aggregation queries stage by stage
+</p>
+<p>
+    - Write SQL to query MongoDB
+</p>
+<p>
+    - Use a drag-and-drop UI for fast query building
+</p>
+<p>
+    - Generate driver code in seven languages
+</p>
+<p>
+    - Color-code databases, connections, and field types
+</p>
+<p>
+    - Copy and paste collections and documents between databases
+</p>
+<p>
+    - And much more
+</p>
+<br/>
+<br/><a class="button" href="https://studio3t.com/download/?utm_source=meet-studio-3t-6&utm_medium=welcomepage&utm_campaign=inapp-robo3t">Download Studio 3T</a><br/><br/><a class="button" href="http://studio3t.com/academy/?utm_source=meet-studio-3t-6&utm_medium=welcomepage&utm_campaign=inapp-robo3t">MongoDB 101 - take the fastest route to learning MongoDB</a>
+
+

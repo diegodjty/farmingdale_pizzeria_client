@@ -1,0 +1,29 @@
+USE YOUR OUTLOOK ACCOUNT
+jonkylewheeler@outlook.com
+https://dev.azure.com/jonkwheeler/
+
+vcse token
+
+fblldz3xfxkvwr3ztde6ztyog3psjy2p3g72pfomqyn5ptszivga
+
+Get a new token logging into https://dev.azure.com/jonkwheeler/ and then clicking the menu left of your profile icon.
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension#common-questions
+
+Once you get a new PAT (token) login via the terminal
+
+vsce login jonkwheeler
+
+DO NOT USE GMAIL
+jonkwheeler@gmail.com 
+jonkwheeler0502
+
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+https://code.visualstudio.com/api/working-with-extensions/publishing-extension#create-a-publisher
+
+Try this first:
+vsce publish minor -p <token>
+
+Then this maybe after:
+vsce publish -p <token>
+vsce publish minor

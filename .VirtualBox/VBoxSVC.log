@@ -1,0 +1,92 @@
+00:00:00.000851 main     VirtualBox COM Server 6.1.16 r140961 win.amd64 (Oct 16 2020 16:33:17) release log
+00:00:00.000854 main     Log opened 2021-01-06T15:02:54.712921500Z
+00:00:00.000855 main     Build Type: release
+00:00:00.000858 main     OS Product: Windows 10
+00:00:00.000859 main     OS Release: 10.0.18363
+00:00:00.000860 main     OS Service Pack: 
+00:00:00.022750 main     DMI Product Name: Z390 UD
+00:00:00.033021 main     DMI Product Version: Default string
+00:00:00.033028 main     Firmware type: UEFI
+00:00:00.033197 main     Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.033213 main     Host RAM: 16316MB (15.9GB) total, 11020MB (10.7GB) available
+00:00:00.033216 main     Executable: E:\Program Files\Oracle\VirtualBox\VBoxSVC.exe
+00:00:00.033217 main     Process ID: 5808
+00:00:00.033217 main     Package type: WINDOWS_64BITS_GENERIC
+00:00:00.105996          VirtualBox: object creation starts
+00:00:00.106875          Home directory: 'C:\Users\Diego\.VirtualBox'
+00:00:00.107119          Installed Drivers:
+00:00:00.109001            C:\WINDOWS\system32\DRIVERS\VBoxNetLwf.sys (Version: 6.1.16.40961)
+00:00:00.109673            C:\WINDOWS\system32\DRIVERS\VBoxUSBMon.sys (Version: 6.1.16.40961)
+00:00:00.110081            C:\WINDOWS\system32\DRIVERS\VBoxDrv.sys (Version: 6.1.16.40961)
+00:00:00.110933            C:\WINDOWS\system32\DRIVERS\VBoxNetAdp6.sys (Version: 6.1.16.40961)
+00:00:00.129710          Loading settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:00.151453          usbLibGetDevices: Starting USB device enumeration
+00:00:00.186259          usbLibGetDevices: Found 4 USB devices, 0 captured
+00:00:00.283831          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:00:00.286889          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:00:00.293299          HostDnsMonitor: initializing
+00:00:00.301257          HostDnsMonitor: updating information
+00:00:00.301640          HostDnsMonitor: old information
+00:00:00.301641            no server entries
+00:00:00.301642            no domain set
+00:00:00.301642            no search string entries
+00:00:00.301642          HostDnsMonitor: new information
+00:00:00.301642            server 1: 192.168.1.1
+00:00:00.301643            no domain set
+00:00:00.301643            no search string entries
+00:00:00.464845          VD: VDInit finished with VINF_SUCCESS
+00:00:00.495979          Loading settings file "E:\Catalina\Catalina.vbox" with version "1.15-windows"
+00:00:00.553093          Loading settings file "E:\Users\Diego\VirtualBox VMs\Ubuntu_\Ubuntu_.vbox" with version "1.16-windows"
+00:00:00.581678          OCI: Local config file 'C:\Users\Diego\.VirtualBox\oci_config' does not exist
+00:00:00.581776          OCI: Original config file 'C:\Users\Diego\.oci\config' does not exist
+00:00:00.581777          OCI: Reading profiles finished with status ERROR_SUCCESS
+00:00:00.581990          ExtPack: Created cloud provider 'OCI' (hrc=ERROR_SUCCESS)
+00:00:00.582024          VirtualBox: object created
+00:00:10.666474          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:00:10.669468          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:00:18.797324          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:00:18.800365          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:00:18.830504          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:00:18.833559          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:00:32.145040          Saving settings file "E:\Users\Diego\VirtualBox VMs\Ubuntu_\Ubuntu_.vbox" with version "1.16-windows"
+00:00:35.553677          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:00:35.556575          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:00:44.583127 USBPROXY usbLibGetDevices: Starting USB device enumeration
+00:00:44.617072 USBPROXY usbLibGetDevices: Found 4 USB devices, 0 captured
+00:00:45.051557 SVCHelper Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:45.055736 SVCHelper Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:45.057961 SVCHelper Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:45.061072 SVCHelper Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:45.063507 SVCHelper Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:45.584531          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:45.586392          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:00:46.043069 dns-monitor HostDnsMonitor: updating information
+00:00:46.043091 dns-monitor HostDnsMonitor: unchanged
+00:00:59.102234          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:00:59.106349          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:01:00.428983          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:01:02.306229 dns-monitor HostDnsMonitor: updating information
+00:01:02.306255 dns-monitor HostDnsMonitor: unchanged
+00:01:06.960778          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:01:06.964436          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:01:06.997630          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:01:07.001336          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:01:17.475141          Saving settings file "E:\Users\Diego\VirtualBox VMs\Ubuntu_\Ubuntu_.vbox" with version "1.16-windows"
+00:01:22.505971          Launched VM: 23679472 pid: 12384 (0x3060) frontend: GUI/Qt name: Ubuntu 
+00:01:27.049499          Load [E:\Program Files\Oracle\VirtualBox\ExtensionPacks\Oracle_VM_VirtualBox_Extension_Pack\win.amd64\VBoxHostWebcam.DLL] vrc=VINF_SUCCESS
+00:01:27.277998          ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={85632c68-b5bb-4316-a900-5eb28d3413df} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:01:27.488219          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:01:27.491755          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:01:27.893646          netIfIsWireless: CreateFile on '\\.\{D3A2754B-E865-44EB-95EE-8A65144E64DB}' failed with rcWin=2 (0x2) - ignoring
+00:01:27.897430          netIfIsWireless: CreateFile on '\\.\{2526A22A-DFD5-47C2-9B6F-E31231EC779C}' failed with rcWin=2 (0x2) - ignoring
+00:03:15.550065          Saving settings file "E:\Users\Diego\VirtualBox VMs\Ubuntu_\Ubuntu_.vbox" with version "1.16-windows"
+00:03:16.934907          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:03:16.968088          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:03:16.970882          Saving settings file "C:\Users\Diego\.VirtualBox\VirtualBox.xml" with version "1.12-windows"
+00:03:22.486551 main     VirtualBox: object deletion starts
+00:03:22.486684 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium 'E:\Catalina\Catalina.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:03:22.489943 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium 'E:\Users\Diego\VirtualBox VMs\Ubuntu_\Ubuntu_.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:03:22.494501 main     HostDnsMonitor: shutting down ...
+00:03:22.494697 main     HostDnsMonitor: shut down
+00:03:22.502424 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={d0a0163f-e254-4e5b-a1f2-011cf991c38d} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:03:22.503279 main     VirtualBox: object deleted

@@ -1,0 +1,43 @@
+{
+	"name": "styled-components-snippets",
+	"displayName": "Styled Components Snippets",
+	"description": "Snippets for Styled Components ",
+	"version": "0.4.0",
+	"icon": "assets/code.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/danielsousast/styled-components-snippets"
+	},
+	"publisher": "danielsousadev",
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4d53e0f3-f027-4857-a5c9-3dfe142bf823",
+		"publisherId": "95280b33-cf63-4ec5-b5d7-982fb84284e2",
+		"publisherDisplayName": "Daniel Sousa"
+	}
+}
