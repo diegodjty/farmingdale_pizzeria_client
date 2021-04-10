@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import styled from '@emotion/styled';
 import {Link,useHistory} from 'react-router-dom'
-import {auth} from '../firebase'
+import {auth,db} from '../firebase'
 
 const Styles = styled.div`
     .container{
@@ -13,6 +13,8 @@ const Styles = styled.div`
 const CreateAccount = () => {
 
     const [userInfo, setUserInfo] = useState({})
+    const [user,setUser] = useState(auth.currentUser)
+    const [userID,setUserID] = useState('')
 
     const onChangeHandler = (e) =>{
         setUserInfo({
@@ -29,13 +31,25 @@ const CreateAccount = () => {
                 userCred.user.updateProfile({
                     displayName: userInfo.name + " " + userInfo.lastName,
                 })
-                console.log(userCred.user.uid)
+                setUserID(userCred.user.uid)
                 history.push("/")
             })
             .catch((error)=>{
                 console.log(error)
-            })  
+            }) 
+
     }
+
+    useEffect(()=>{
+        if( userID !== ""){
+            db.collection('user').doc(userID).set({
+                id: userID,
+                name: userInfo.name + " " + userInfo.lastName,
+                number: userInfo.phoneNumber,
+                email: userInfo.email
+            }) 
+        }
+    },[userID])
 
     return (
         <Styles>

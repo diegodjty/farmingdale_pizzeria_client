@@ -1,12 +1,13 @@
 import React,{useState,useEffect,useContext} from 'react';
 import styled from '@emotion/styled';
-import {db} from '../firebase'
+import {db,auth} from '../firebase'
 import {toast } from 'react-toastify';
-import {Link } from 'react-router-dom'
+import {Link,useHistory } from 'react-router-dom'
 
 import 'react-toastify/dist/ReactToastify.css';
 import OrderDetails from './OrderDetails';
 import { CartContext } from './../CartContext';
+import swal from 'sweetalert'
 
 import Apple from '../assets/apple.png'
 import Paypal from '../assets/paypal.png'
@@ -40,6 +41,10 @@ const Styles = styled.div`
     }
     .container{
         border-radius: 10px;
+        .top-links{
+            display: flex;
+            justify-content: space-between
+        }
     }
     .order-description{
         width: 100%;
@@ -125,7 +130,52 @@ const Cart = () => {
     const [order,setOrder] = useState({})
     const [total,setTotal] = useState(0)
     const [debitCreditOpen, setDebitCreditOpen] = useState( false)
+    const [user,setUser] = useState(auth.currentUser)
+    const [userDB,setUserDB] = useState({})
+    const history = useHistory()
 
+    // ASk to login to get reward poinst
+    useEffect(() => { 
+        // if no user is sign in reroute to login page
+        if(!user){
+            swal({
+                title: "Reward Points",
+                text: "Want to get Reward points? Just Log In or Create an Account",
+                buttons: [true,"Login"],
+              })
+              .then((login) => {
+                if (login) {
+                  history.push("/login")
+                }
+              });
+        }else{
+            // get data from the user that is log in
+            db.collection('user').doc(user.uid)
+            .get()
+            .then((doc)=>{
+                setUserDB({
+                    email: doc.data().email,
+                    id: doc.data().id,
+                    name: doc.data().name,
+                    number: doc.data().number
+                })
+            })
+            .then(()=>{
+                setOrder({
+                    name: user.displayName,
+                })
+
+            })
+        }
+    }, [user])
+
+    useEffect(() => {
+        setOrder({
+            number: userDB.number
+        })
+    }, [order.name])
+
+    // get the total if the entire order
     useEffect(() => {
         if(cart.length !== 0){
             let totalx = 0
@@ -136,7 +186,7 @@ const Cart = () => {
         }
     }, [cart])
     
-   
+   // place order
     const handleSubmit = (e) =>{
         if(typeof(order.name) !== 'undefined' || typeof(order.number) !== 'undefined'){
             console.log('full')
@@ -180,11 +230,23 @@ const Cart = () => {
             [e.target.name] : e.target.value
         })
     }
+    const logoutHandler = () =>{
+        auth.signOut()
+        history.push("/")
+    }
 
     return (
         <Styles>
             <div className="container">
-                <Link to="/" ><span>&#8592;</span>Go back</Link>
+                <div className="top-links">
+                    <Link to="/" ><span>&#8592;</span>Go back</Link>
+                    {user 
+                        ?
+                            <Link className="login-btn" onClick={logoutHandler} >Logout<span>&#8594;</span></Link>
+                        :
+                            <Link className="login-btn" to="/login" >Login<span>&#8594;</span></Link>
+                    }
+                </div>
                 <form action="" id="myform">
                     <h4 className="text-center">Customer Info</h4>
                     {alert &&(
@@ -193,9 +255,9 @@ const Cart = () => {
                         </div>
                     )}
                     <label htmlFor="name" className="form-label">Name</label>
-                    <input type="text" id="name" name="name" required onChange={handleChange} value={order.name} className="form-control"/>
+                    <input type="text" id="name" name="name" value={order.name} required onChange={handleChange} value={order.name} className="form-control"/>
                     <label htmlFor="number" className="form-label">Phone Number</label>
-                    <input type="text" id="number" name="number" required onChange={handleChange} value={order.number} className="form-control"/>
+                    <input type="text" id="number" name="number" value={order.number} required onChange={handleChange} value={order.number} className="form-control"/>
                 </form>
                 <div className="payment">
                     <div className="payment-method">

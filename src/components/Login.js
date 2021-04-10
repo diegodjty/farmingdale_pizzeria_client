@@ -26,7 +26,7 @@ const Login = () => {
                 auth.signInWithEmailAndPassword(email,password)
                     .then((userCredential) =>{
                         setUser(userCredential.user)
-                        history.push("/profile")
+                        history.push("/")
                     })
                     .catch((error)=>{
                         setError(error.message)
