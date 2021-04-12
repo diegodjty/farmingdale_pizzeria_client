@@ -1,9 +1,10 @@
-import React,{useContext,useState} from 'react';
+import React,{useContext,useState,useEffect} from 'react';
 import { CartContext } from './../CartContext';
-import {auth} from '../firebase'
+import {auth, db} from '../firebase'
 import {useHistory} from 'react-router-dom'
 import MobileNavBar from './../components/mobile/MobileNavbar';
 import styled from '@emotion/styled';
+import RecentOrders from './../components/RecentOrders';
 
 
 const Styles = styled.div`
@@ -36,13 +37,14 @@ const Styles = styled.div`
                     margin: auto;
       
                 }
-                .edit-profile{
-                     .btn{
+                .btn{
                          background-color: #ffc107;
                          color: white;
                          margin-top: 5px;
                          font-weight: bold;
-                     }
+                }
+                .edit-profile{
+                    
                 }
             }
         }
@@ -52,13 +54,30 @@ const Styles = styled.div`
 const User = () => {
 
     const [user,setUser] = useState(auth.currentUser)
+    const [userDB,setUserDB] = useState({})
+    const [recentOrderLimit,setRecentOrderLimit] = useState(5)
+
+
+    useEffect(() => {
+        db.collection('user').doc(user.uid).get().then((doc)=>{
+            setUserDB({
+                email: doc.data().email,
+                id: doc.data().id,
+                name: doc.data().name,
+                number: doc.data().number,
+                points: doc.data().points,
+                orderHistory: doc.data().orderHistory.reverse() // get last orders
+            })
+        })
+    }, [user])
 
     let history = useHistory()
     const logoutHandler = () =>{
         auth.signOut()
         history.push("/")
     }
-    // console.log(user)
+
+   
     return (
         <Styles>
             <div className="container">
@@ -69,31 +88,36 @@ const User = () => {
                     <div className="profile-card">
                         <h4>Total Points</h4>
                         <div className="circle">
-                            10/50
+                            {userDB.points}/50
+                            
                         </div>
+                        <div className="btn" disabled >Redeem Prize</div>
                     </div>
                     <div className="profile-card">
                         <h4>Recent Orders</h4>
                         <div className="recent-orders">
-                            <ol>
-                                <li>Chicken Parmegan...<span> --- 04/15</span></li>
-                                <li>Barbequo Pizza...<span> --- 04/15</span></li>
-                                <li>Chicken Parmegan...<span> --- 04/15</span></li>
-                                <li>... --- 04/15</li>
-                                <li>Chicken Parmegan... --- 04/15</li>
-                                <li>Chicken Parmegan... --- 04/15</li>
-                            </ol>
+                            {
+                                userDB.orderHistory
+                                ?
+                                    userDB.orderHistory.reverse().slice(0,5).map((order)=>{ // get only the last 5 orders
+                                            return <RecentOrders order={order}/>
+                                    })
+                                    
+                                :
+                                    null
+                            }
                         </div>
                     </div>
                     <div className="profile-card">
                         <h4>Profile</h4>
                         <div className="edit-profile">
                             <div className="btn">Edit Profile</div>
+                            <button type="button" className="btn btn-danger" onClick={logoutHandler}>Logout</button>
                         </div>
                     </div>
                 </div>
             </div>
-                <button type="button" className="btn btn-danger" onClick={logoutHandler}>Logout</button>
+                
             </div>
         </Styles>
     );

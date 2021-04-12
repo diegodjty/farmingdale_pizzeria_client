@@ -46,7 +46,8 @@ const CreateAccount = () => {
                 id: userID,
                 name: userInfo.name + " " + userInfo.lastName,
                 number: userInfo.phoneNumber,
-                email: userInfo.email
+                email: userInfo.email,
+                points: 0
             }) 
         }
     },[userID])

@@ -102,8 +102,9 @@ const Reservations = () => {
                         <input type="email" placeholder="Email Address"/>
                     </div>
                     <div className="column">
-                        <select placeholder="Number of Guests">
-                            <option value="" disabled selected>Number of Guests</option>
+                        <select value="Number of Guests">
+                        {/* eslint-disable-next-line*/}
+                            <option readOnly>Number of Guests</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>

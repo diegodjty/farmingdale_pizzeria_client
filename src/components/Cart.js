@@ -1,6 +1,6 @@
 import React,{useState,useEffect,useContext} from 'react';
 import styled from '@emotion/styled';
-import {db,auth} from '../firebase'
+import {db,auth,firebase} from '../firebase'
 import {toast } from 'react-toastify';
 import {Link,useHistory } from 'react-router-dom'
 
@@ -157,11 +157,13 @@ const Cart = () => {
                     email: doc.data().email,
                     id: doc.data().id,
                     name: doc.data().name,
-                    number: doc.data().number
+                    number: doc.data().number,
+                    points: doc.data().points
                 })
             })
             .then(()=>{
                 setOrder({
+                    ...order,
                     name: user.displayName,
                 })
 
@@ -171,6 +173,7 @@ const Cart = () => {
 
     useEffect(() => {
         setOrder({
+            ...order,
             number: userDB.number
         })
     }, [order.name])
@@ -188,16 +191,21 @@ const Cart = () => {
     
    // place order
     const handleSubmit = (e) =>{
-        if(typeof(order.name) !== 'undefined' || typeof(order.number) !== 'undefined'){
+        if(order.name === "" ||
+           order.number === "" ||
+           typeof(order.name) !== 'undefined' ||
+           typeof(order.number) !== 'undefined'){
             console.log('full')
             setAlert(false)
             if( cart.length !== 0){
+                console.log(order.name)
                 e.preventDefault()
                 db.collection('orders').add({
                     name: order.name,
                     number: order.number,
                     order: cart,
-                    total: total
+                    total: total,
+                    createdAT: firebase.firestore.FieldValue.serverTimestamp()
                 })
                 .then((docRef) =>{
                     console.log(docRef.id)
@@ -214,7 +222,25 @@ const Cart = () => {
                     draggable: true,
                     progress: undefined,
                 });
+
+                if(user){
+                    let time = firebase.firestore.Timestamp.now()
+                    db.collection('user').doc(user.uid).set({
+                        orderHistory: firebase.firestore.FieldValue.arrayUnion(
+                            {
+                                cart: cart,
+                                total: total,
+                                createdAT: time
+                            }
+                        )
+                    },{merge: true})
+                    db.collection('user').doc(user.uid).update({
+                        points: userDB.points + 10
+                    })
+                }
+                history.push('/')
             }
+            
             setOrder({})
             setTotal(0)
             setCart([])
@@ -255,9 +281,9 @@ const Cart = () => {
                         </div>
                     )}
                     <label htmlFor="name" className="form-label">Name</label>
-                    <input type="text" id="name" name="name" value={order.name} required onChange={handleChange} value={order.name} className="form-control"/>
+                    <input type="text" id="name" name="name" value={order.name} required onChange={handleChange}  className="form-control"/>
                     <label htmlFor="number" className="form-label">Phone Number</label>
-                    <input type="text" id="number" name="number" value={order.number} required onChange={handleChange} value={order.number} className="form-control"/>
+                    <input type="text" id="number" name="number" value={order.number} required onChange={handleChange} className="form-control"/>
                 </form>
                 <div className="payment">
                     <div className="payment-method">
