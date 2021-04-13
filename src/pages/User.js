@@ -1,5 +1,6 @@
 import React,{useContext,useState,useEffect} from 'react';
 import { CartContext } from './../CartContext';
+import {toast } from 'react-toastify';
 import {auth, db} from '../firebase'
 import {useHistory} from 'react-router-dom'
 import MobileNavBar from './../components/mobile/MobileNavbar';
@@ -37,14 +38,24 @@ const Styles = styled.div`
                     margin: auto;
       
                 }
-                .btn{
+                .buttons{
                          background-color: #ffc107;
                          color: white;
-                         margin-top: 5px;
                          font-weight: bold;
                 }
                 .edit-profile{
-                    
+                    form{
+                        text-align: left;
+                        margin-bottom: 20px;
+                        
+                    }
+                    .btn-container{
+                            display: flex;
+                            justify-content: space-around;
+                        }
+                    .logout{
+                        background-color: red;
+                    }
                 }
             }
         }
@@ -55,7 +66,10 @@ const User = () => {
 
     const [user,setUser] = useState(auth.currentUser)
     const [userDB,setUserDB] = useState({})
-    const [recentOrderLimit,setRecentOrderLimit] = useState(5)
+    const [userEdit,setUserEdit] = useState({
+        name: '',
+        number: 0
+    })
 
 
     useEffect(() => {
@@ -66,12 +80,48 @@ const User = () => {
                 name: doc.data().name,
                 number: doc.data().number,
                 points: doc.data().points,
-                orderHistory: doc.data().orderHistory.reverse() // get last orders
+                orderHistory: doc.data().orderHistory.reverse().slice(0,5) // get last orders
             })
         })
     }, [user])
 
+    const handleEdit = (e) =>{
+        setUserEdit({
+            ...userEdit,
+            [e.target.name] : e.target.value
+        })
+    }
+
+    const handleEditSubmit = (e) =>{
+        e.preventDefault()
+
+        if(userEdit.name !== ""){
+            db.collection('user').doc(user.uid).update({
+                name: userEdit.name
+            })
+            user.updateProfile({
+                displayName: userEdit.name
+            })
+        }
+
+        if(userEdit.number !== ""){
+            db.collection('user').doc(user.uid).update({
+                number: userEdit.number
+            })
+        }
+
+        toast.warning('Profile Updated ✏️', {
+            position: "top-left",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+    }
     let history = useHistory()
+    console.log(user.displayName)
     const logoutHandler = () =>{
         auth.signOut()
         history.push("/")
@@ -91,7 +141,7 @@ const User = () => {
                             {userDB.points}/50
                             
                         </div>
-                        <div className="btn" disabled >Redeem Prize</div>
+                        <div className="btn buttons" disabled >Redeem Prize</div>
                     </div>
                     <div className="profile-card">
                         <h4>Recent Orders</h4>
@@ -99,8 +149,8 @@ const User = () => {
                             {
                                 userDB.orderHistory
                                 ?
-                                    userDB.orderHistory.reverse().slice(0,5).map((order)=>{ // get only the last 5 orders
-                                            return <RecentOrders order={order}/>
+                                    userDB.orderHistory.map((order)=>{ // get only the last 5 orders
+                                            return <RecentOrders order={order} key={order.cart}/>
                                     })
                                     
                                 :
@@ -111,8 +161,22 @@ const User = () => {
                     <div className="profile-card">
                         <h4>Profile</h4>
                         <div className="edit-profile">
-                            <div className="btn">Edit Profile</div>
-                            <button type="button" className="btn btn-danger" onClick={logoutHandler}>Logout</button>
+                        <form action="" id="myform">
+                            <h4 className="text-center">Customer Info</h4>
+                            {/* {alert &&(
+                                <div className="alert alert-danger" role="alert">
+                                    All Fields are required
+                                </div>
+                            )} */}
+                            <label htmlFor="name" className="form-label">Name</label>
+                            <input type="text" id="name" name="name" placeholder={userDB.name} onChange={handleEdit}  required   className="form-control"/>
+                            <label htmlFor="number" className="form-label">Phone Number</label>
+                            <input type="text" id="number" name="number" placeholder={userDB.number} onChange={handleEdit}  required  className="form-control"/>
+                        </form>
+                        <div className="btn-container">
+                            <div className="btn buttons" onClick={handleEditSubmit}>Edit Profile</div>
+                            <button type="button" className="btn logout btn-danger" onClick={logoutHandler}>Logout</button>
+                        </div>
                         </div>
                     </div>
                 </div>
