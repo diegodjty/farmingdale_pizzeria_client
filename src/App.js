@@ -6,7 +6,6 @@ import Cart from './components/Cart';
 import Profile from './components/Profile'
 import CreateAccount from './components/CreateAccount'
 import Login from './components/Login'
-import MobileNavBar from './components/mobile/MobileNavbar';
 
 
 function App() {

@@ -28,7 +28,7 @@ const RecentOrders = ({order}) => {
                     {order.createdAT.toDate().toLocaleString('en-US',{dateStyle: "full"})}
                 </div>
                 <div className="date">
-                    {"$"+order.total}
+                    {"$"+order.total.toFixed(2)}
                 </div>
             </div>
             <div className="order-desc">

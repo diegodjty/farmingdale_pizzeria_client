@@ -1,6 +1,5 @@
-import React,{useState,useContext} from 'react';
+import React,{useState} from 'react';
 import styled from '@emotion/styled';
-import { CartContext } from './../CartContext';
 import {auth} from '../firebase'
 import {useHistory,Link} from 'react-router-dom'
 
@@ -11,12 +10,26 @@ const Styles = styled.div`
     }
     form{
     }
+    @media (min-width: 1024px){
+        background-color: #EFEFEF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        form{
+            background-color: white;
+            width: 50%;
+            margin: auto;
+            padding: 50px;
+        }
+    }
 `;
 
 const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    // eslint-disable-next-line
     const [error, setError] = useState(null);
     const [user,setUser] = useState(auth.currentUser)
     let history = useHistory()

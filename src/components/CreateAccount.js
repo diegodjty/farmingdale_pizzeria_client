@@ -9,10 +9,24 @@ const Styles = styled.div`
     }
     form{
     }
+    @media (min-width: 1024px){
+        background-color: #EFEFEF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        form{
+            background-color: white;
+            width: 50%;
+            margin: auto;
+            padding: 50px;
+        }
+    }
 `;
 const CreateAccount = () => {
 
     const [userInfo, setUserInfo] = useState({})
+    // eslint-disable-next-line
     const [user,setUser] = useState(auth.currentUser)
     const [userID,setUserID] = useState('')
 
@@ -47,9 +61,11 @@ const CreateAccount = () => {
                 name: userInfo.name + " " + userInfo.lastName,
                 number: userInfo.phoneNumber,
                 email: userInfo.email,
-                points: 0
+                points: 0,
+                orderHistory: []
             }) 
         }
+        // eslint-disable-next-line
     },[userID])
 
     return (

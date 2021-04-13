@@ -130,6 +130,7 @@ const Cart = () => {
     const [order,setOrder] = useState({})
     const [total,setTotal] = useState(0)
     const [debitCreditOpen, setDebitCreditOpen] = useState( false)
+    // eslint-disable-next-line
     const [user,setUser] = useState(auth.currentUser)
     const [userDB,setUserDB] = useState({})
     const history = useHistory()
@@ -169,6 +170,7 @@ const Cart = () => {
 
             })
         }
+        // eslint-disable-next-line
     }, [user])
 
     useEffect(() => {
@@ -176,6 +178,7 @@ const Cart = () => {
             ...order,
             number: userDB.number
         })
+        // eslint-disable-next-line
     }, [order.name])
 
     // get the total if the entire order

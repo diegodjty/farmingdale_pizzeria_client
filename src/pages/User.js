@@ -1,12 +1,10 @@
-import React,{useContext,useState,useEffect} from 'react';
-import { CartContext } from './../CartContext';
+import React,{useState,useEffect} from 'react';
 import {toast } from 'react-toastify';
 import {auth, db} from '../firebase'
 import {useHistory} from 'react-router-dom'
-import MobileNavBar from './../components/mobile/MobileNavbar';
 import styled from '@emotion/styled';
 import RecentOrders from './../components/RecentOrders';
-
+import {Link} from 'react-router-dom'
 
 const Styles = styled.div`
     background-color: #efefef;
@@ -60,10 +58,20 @@ const Styles = styled.div`
             }
         }
     }
+    @media (min-width: 1024px){
+        .cards-container{
+            display: flex;
+            justify-content: space-between;
+
+            .profile-card{
+                width: 32%;
+            }
+        }
+    }
 `;
 
 const User = () => {
-
+    // eslint-disable-next-line
     const [user,setUser] = useState(auth.currentUser)
     const [userDB,setUserDB] = useState({})
     const [userEdit,setUserEdit] = useState({
@@ -131,8 +139,8 @@ const User = () => {
     return (
         <Styles>
             <div className="container">
-            <MobileNavBar />
             <div className="profile-container">
+            <Link to="/" ><span>&#8592;</span>Go back</Link>
                 <h3>Welcome Back!, {user.displayName}</h3>
                 <div className="cards-container">
                     <div className="profile-card">
@@ -162,7 +170,6 @@ const User = () => {
                         <h4>Profile</h4>
                         <div className="edit-profile">
                         <form action="" id="myform">
-                            <h4 className="text-center">Customer Info</h4>
                             {/* {alert &&(
                                 <div className="alert alert-danger" role="alert">
                                     All Fields are required

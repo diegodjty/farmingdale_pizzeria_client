@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react';
-
+import {Link} from 'react-router-dom'
 import Logo from '../assets/logo.png'
 
 import styled from '@emotion/styled'
@@ -71,8 +71,8 @@ const NavbarComponent = () => {
                    <li><a href="#menu">Menu</a></li>
                    <li><a href="#reservations">Reservations</a></li>
                    <li className="logo"><a href="#home"> <img src={Logo} alt="Logo" /> </a></li>
-                   <li><a href="#contactUs">Contact Us</a></li>
-                   <li><a href="#aboutUs">About us</a></li>
+                   <li><a href="#aboutUs">About Us</a></li>
+                   <li><Link to={"/login"}>Profile</Link></li>
                </ul>
            </nav>
         </Styles>

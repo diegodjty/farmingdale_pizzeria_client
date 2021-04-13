@@ -57,6 +57,7 @@ const Styles = styled.div`
 const MobileNavBar = () => {
 
     const [isMenuOpen,setIsMenuOpen] = useState(false);
+    // eslint-disable-next-line
     const [user] = useContext(CartContext)
     return (
         <Styles >
