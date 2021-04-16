@@ -66,6 +66,11 @@ const Login = () => {
             <div className="container">
                 <form>
                     <h2>Login</h2>
+                    {error &&(
+                        <div className="alert alert-danger" role="alert">
+                            {error}
+                        </div>
+                    )}
                     <div className="mb-3">
                         <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
                         <input name='userEmail' type="email" className="form-control" onChange = {(event) => onChangeHandler(event)} />

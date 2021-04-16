@@ -29,6 +29,7 @@ const CreateAccount = () => {
     // eslint-disable-next-line
     const [user,setUser] = useState(auth.currentUser)
     const [userID,setUserID] = useState('')
+    const [error, setError] = useState(null);
 
     const onChangeHandler = (e) =>{
         setUserInfo({
@@ -49,7 +50,7 @@ const CreateAccount = () => {
                 history.push("/")
             })
             .catch((error)=>{
-                console.log(error)
+                setError(error.message)
             }) 
 
     }
@@ -72,7 +73,13 @@ const CreateAccount = () => {
         <Styles>
             <div className="container">
                 <form>
+                    
                     <h2>Create Account</h2>
+                    {error &&(
+                        <div className="alert alert-danger" role="alert">
+                            {error}
+                        </div>
+                    )}
                     <div className="mb-3">
                         <label htmlFor="name" className="form-label">Name</label>
                         <input name='name' type="text" className="form-control" onChange={onChangeHandler}  />
