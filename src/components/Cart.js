@@ -13,6 +13,7 @@ import Apple from '../assets/apple.png'
 import Paypal from '../assets/paypal.png'
 import Credit_debit from '../assets/credit_debit.png'
 
+
 const Styles = styled.div`
     margin: auto;
     background-color: #efefef;
@@ -135,6 +136,7 @@ const Cart = () => {
     const [userDB,setUserDB] = useState({})
     const history = useHistory()
 
+
     // ASk to login to get reward poinst
     useEffect(() => { 
         // if no user is sign in reroute to login page
@@ -194,6 +196,7 @@ const Cart = () => {
     
    // place order
     const handleSubmit = (e) =>{
+        let orderNumber = Math.floor(Math.random() * 10000000)
         if(order.name === "" ||
            order.number === "" ||
            typeof(order.name) !== 'undefined' ||
@@ -208,7 +211,9 @@ const Cart = () => {
                     number: order.number,
                     order: cart,
                     total: total,
-                    createdAT: firebase.firestore.FieldValue.serverTimestamp()
+                    createdAT: firebase.firestore.FieldValue.serverTimestamp(),
+                    orderNumber: orderNumber,
+                    isReady: false
                 })
                 .then((docRef) =>{
                     console.log(docRef.id)
@@ -241,7 +246,7 @@ const Cart = () => {
                         points: userDB.points + 10
                     })
                 }
-                history.push('/')
+                history.push(`/orderNumber/${orderNumber}`)
             }
             
             setOrder({})

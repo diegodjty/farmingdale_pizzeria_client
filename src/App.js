@@ -6,6 +6,7 @@ import Cart from './components/Cart';
 import Profile from './components/Profile'
 import CreateAccount from './components/CreateAccount'
 import Login from './components/Login'
+import OrderNumber from './pages/OrderNumber';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route exact path="/profile" component={Profile}></Route>
               <Route exact path="/login" component={Login}></Route>
               <Route exact path="/createAccount" component={CreateAccount}></Route>
+              <Route path={"/orderNumber/:id"} component={OrderNumber}></Route>
               {/* <Route exact path="/reservations" component={Reservations}></Route> */}
             </Switch>
         </Router>
