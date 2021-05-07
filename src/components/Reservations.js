@@ -93,7 +93,7 @@ const Reservations = () => {
                     <div className="title">
                         <h3>Make online reservation</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae maiores quae qui.</p>
+                    <p>Lorems ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae maiores quae qui.</p>
                 </div>
                 <form>
                     <div className="column">
